@@ -5,7 +5,7 @@ import styles from './ReviewsSection.module.scss';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { arrowLeft, arrowRight, testimonials } from '../../assets';
+import { arrowRight, testimonials } from '../../assets';
 
 const ReviewsSection: React.FC = () => {
     const sliderRef = useRef<Slider>(null);
@@ -44,8 +44,6 @@ const ReviewsSection: React.FC = () => {
                 }
             }
         ],
-        prevArrow: null,
-        nextArrow: null
     };
 
     return (
@@ -74,14 +72,6 @@ const ReviewsSection: React.FC = () => {
 
 export default ReviewsSection;
 
-interface Review {
-    id: string;
-    image: string;
-    name: string;
-    title: string;
-    description: string;
-}
-
 interface SliderSettings {
     dots: boolean;
     infinite: boolean;
@@ -89,9 +79,8 @@ interface SliderSettings {
     slidesToShow: number;
     slidesToScroll: number;
     responsive: ResponsiveSetting[];
-    prevArrow: null | JSX.Element;
-    nextArrow: null | JSX.Element;
 }
+
 
 interface ResponsiveSetting {
     breakpoint: number;
