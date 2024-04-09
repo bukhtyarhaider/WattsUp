@@ -1,0 +1,59 @@
+@import "../../mixins";
+.serviceCardContainer {
+  border: 1px solid var(--gray-blue);
+  width: 423px;
+  height: 383.25px;
+  padding: 40px 32px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    box-shadow: 18px 15px 35px 0px #00000017;
+  }
+
+  .imageContainer {
+    @include flex(column, center, center);
+    margin-bottom: 20px;
+    .imageWrapp {
+      height: 100px;
+      width: 100px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .contentContainer {
+    @include flex(column, start, start);
+    gap: 20px;
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .description {
+      font-family: var(--secondaryFont);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--d-grey);
+      line-height: 24px;
+    }
+
+    .link {
+      font-family: var(--secondaryFont);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--primary-red);
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .serviceCardContainer {
+    width: 350px;
+    min-height: 385px;
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../mixins";
+.whyChooseUsContainer {
+  @include flex(row, center, center);
+  padding: 150px 100px;
+
+  .contentContainer {
+    padding-left: 65px;
+
+    .heading {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 72px;
+
+      span {
+        color: var(--primary-red);
+      }
+    }
+
+    .description {
+      color: var(--d-grey);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      padding-top: 25px;
+      padding-bottom: 55px;
+      padding-right: 40px;
+    }
+
+    .section {
+      @include flex(row, start, center);
+
+      .sectionContent {
+        @include flex(column, center, start);
+        gap: 10px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        .sectionHeading {
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 32px;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          padding-right: 40px;
+          color: var(--d-grey);
+        }
+
+        .link {
+          font-family: var(--secondaryFont);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: var(--primary-red);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .whyChooseUsContainer {
+    @include flex(column-reverse, center, center);
+    padding: 0px;
+    padding-top: 20px;
+
+    .imageContainer {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .contentContainer {
+      padding-inline: 20px;
+
+      .heading {
+        font-size: 32px;
+
+        text-align: center;
+      }
+
+      .description {
+        text-align: center;
+        padding-right: 0px;
+      }
+
+      .section {
+        .sectionContent {
+          p {
+            padding-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}

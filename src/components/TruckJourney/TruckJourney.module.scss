@@ -1,0 +1,65 @@
+@import "../../mixins";
+.truckJourneyContainer {
+  padding: 90px 200px;
+  .heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+
+    span {
+      color: var(--primary-red);
+    }
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: var(--d-grey);
+    padding: 10px 100px;
+    padding-bottom: 30px;
+  }
+
+  .inputContainer {
+    @include flex(row, center, center);
+    padding-bottom: 25px;
+    input {
+      background-color: var(--gray-blue);
+      width: 670px;
+      margin-inline: auto;
+      padding: 23px 40px;
+      border-radius: 104px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+
+  .buttonWrapp {
+    @include flex(row, center, center);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .truckJourneyContainer {
+    padding: 50px 20px;
+    .heading {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    .description {
+      padding: 20px 0px;
+    }
+
+    .inputContainer {
+      input {
+        padding: 20px 40px;
+        font-size: 16px;
+      }
+    }
+  }
+}
