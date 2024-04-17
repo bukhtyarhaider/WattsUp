@@ -75,6 +75,26 @@ export const joinUs = [
   },
 ];
 
+export const comprehensiveSolutions = [
+  {
+    icon: documentRedIcon,
+    title: "Load Finding",
+    description:
+      "Efficiently locate ideal loads tailored to your fleet's capacity and schedule.",
+  },
+  {
+    icon: editRedIcon,
+    title: "Paperwork Exchange",
+    description:
+      "Streamline your logistics with meticulous paperwork exchange.",
+  },
+  {
+    icon: truckRedIcon,
+    title: "Operations Updates",
+    description: "Stay informed every step of the way with real-time updates.",
+  },
+];
+
 export const insightsData = [
   {
     title: "13",
@@ -193,6 +213,57 @@ export const FAQs = [
     title: "Do you offer insurance coverage for transported goods?",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis eleifend quam, non efficitur nisi mattis quis.",
+  },
+];
+
+export const ourSpecializedFleetData = [
+  {
+    id: "01.",
+    title: "Box Truck",
+    description:
+      "Ideal for smaller loads and urban deliveries, our box trucks offer versatility and agility for efficient transportation in congested areas.",
+  },
+  {
+    id: "02.",
+    title: "Reefer",
+    description:
+      "We are equipped with state-of-the-art temperature control systems, ensuring the safe and precise transport of temperature-sensitive goods.",
+  },
+  {
+    id: "03.",
+    title: "Flatbed",
+    description:
+      "We specialize in transporting oversized or unconventional cargo, providing secure loading and transportation for construction materials.",
+  },
+  {
+    id: "04.",
+    title: "Hotshot",
+    description:
+      "Our hotshot service offers expedited delivery for time-sensitive shipments, providing fast and reliable transportation solutions for urgent freight needs.",
+  },
+  {
+    id: "05.",
+    title: "Cargo Van",
+    description:
+      "ur cargo vans are perfect for small to medium-sized loads, offering quick and efficient transportation for parcels, packages.",
+  },
+  {
+    id: "06.",
+    title: "Dry Van",
+    description:
+      "Our dry vans provide secure and weatherproof transportation for a wide range of goods, from consumer products to industrial materials.",
+  },
+  {
+    id: "07.",
+    title: "Gooseneck",
+    description:
+      "Our gooseneck trailers offer enhanced stability and maneuverability, making them ideal for hauling heavy equipment, vehicles, and other oversized loads.",
+  },
+  {
+    id: "08.",
+    title: "Power Only",
+    description:
+      "With our power-only service, we provide the tractor unit without the trailer, allowing for flexible transportation solutions.",
   },
 ];
 

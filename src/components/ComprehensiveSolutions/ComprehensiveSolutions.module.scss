@@ -1,0 +1,67 @@
+@import "../../mixins";
+.comprehensiveSolutionsContainer {
+  position: relative;
+  background: var(--pink);
+  padding: 60px 0;
+  text-align: center;
+  .heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    padding-bottom: 60px;
+    span {
+      color: var(--primary-red);
+    }
+  }
+
+  .cardsContainer {
+    @include flex(row, center, center);
+    gap: 40px;
+
+    .card {
+      @include flex(column, center, center);
+      gap: 10px;
+      padding-top: 20px;
+      h3 {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 28px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: var(--d-grey);
+        padding-inline: 60px;
+      }
+    }
+  }
+
+  .linesTop {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .comprehensiveSolutionsContainer {
+    .heading {
+      font-size: 32px;
+      line-height: 42px;
+      padding-bottom: 50px;
+    }
+
+    .cardsContainer {
+      @include flex(column, center, center);
+      gap: 30px;
+
+      .card {
+        p {
+          padding-inline: 20px;
+        }
+      }
+    }
+  }
+}

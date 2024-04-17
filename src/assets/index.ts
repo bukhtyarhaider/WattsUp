@@ -8,6 +8,7 @@ export { default as ellipse } from "./icons/404/ellipse.svg";
 
 export { default as logo } from "./icons/logo.svg";
 export { default as heroImage } from "./images/hero-section.png";
+export { default as serviceHeaderImage } from "./images/services-hero.png";
 export { default as insightsImage } from "./images/Insights.png";
 export { default as whyChooseUs } from "./images/why-choose-us.png";
 export { default as footerImg } from "./images/footer.png";
@@ -25,6 +26,7 @@ export { default as clientProfile } from "./images/profile.jpeg";
 export { default as boys } from "./images/boys.png";
 export { default as man } from "./images/man.png";
 export { default as redCapBoy } from "./images/red-cap-boy.png";
+export { default as redTruck } from "./images/red-truck.png";
 export { default as redTruckFront } from "./images/red-truck-front.png";
 export { default as truckFront } from "./images/truck-front.png";
 export { default as insideCar } from "./images/inside-car.png";
