@@ -1,9 +1,12 @@
 import {
+  boxTimeIcon,
+  clientProfile,
   documentRedIcon,
   editRedIcon,
   scanRedIcon,
   searchRedIcon,
   sheildRedIcon,
+  timerPauseIcon,
   truckIcon,
   truckRedIcon,
 } from "./assets";
@@ -36,14 +39,14 @@ export const ourServices = [
     link: "",
   },
   {
-    icon: truckIcon,
+    icon: boxTimeIcon,
     title: "Smooth Operations",
     description:
       "We seamlessly coordinate with reputable brokerages, ensuring all documentation is handled efficiently for smooth operations. Focus on the road while we handle the paperwork!",
     link: "",
   },
   {
-    icon: truckIcon,
+    icon: timerPauseIcon,
     title: "Updates during operations",
     description:
       "We keep you in the loop with real-time updates throughout the transportation process, ensuring transparency and efficiency. Trust us to deliver timely information.",
@@ -93,42 +96,42 @@ export const insightsData = [
 
 export const reviews = [
   {
-    image: truckIcon,
+    image: clientProfile,
     name: "John Smith",
     title: "Logistics Manager",
     description:
       "Watts Up Trucking has been instrumental in helping us streamline our logistics process. Their attention to detail and prompt communication make them a valuable partner in our supply chain.",
   },
   {
-    image: truckIcon,
+    image: clientProfile,
     name: "John Smith",
     title: "Logistics Manager",
     description:
       "Watts Up Trucking has been instrumental in helping us streamline our logistics process. Their attention to detail and prompt communication make them a valuable partner in our supply chain.",
   },
   {
-    image: truckIcon,
+    image: clientProfile,
     name: "John Smith",
     title: "Logistics Manager",
     description:
       "Watts Up Trucking has been instrumental in helping us streamline our logistics process. Their attention to detail and prompt communication make them a valuable partner in our supply chain.",
   },
   {
-    image: truckIcon,
+    image: clientProfile,
     name: "John Smith",
     title: "Logistics Manager",
     description:
       "Watts Up Trucking has been instrumental in helping us streamline our logistics process. Their attention to detail and prompt communication make them a valuable partner in our supply chain.",
   },
   {
-    image: truckIcon,
+    image: clientProfile,
     name: "John Smith",
     title: "Logistics Manager",
     description:
       "Watts Up Trucking has been instrumental in helping us streamline our logistics process. Their attention to detail and prompt communication make them a valuable partner in our supply chain.",
   },
   {
-    image: truckIcon,
+    image: clientProfile,
     name: "John Smith",
     title: "Logistics Manager",
     description:

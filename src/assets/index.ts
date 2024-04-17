@@ -17,6 +17,11 @@ export { default as linesTop } from "./images/linesTop.svg";
 
 export { default as call } from "./icons/call.svg";
 export { default as truckIcon } from "./icons/truck.svg";
+export { default as boxTimeIcon } from "./icons/box-time.svg";
+export { default as timerPauseIcon } from "./icons/timer-pause.svg";
+export { default as ringIcon } from "./icons/ring.svg";
+export { default as addressBookIcon } from "./icons/ph_address-book.svg";
+export { default as clientProfile } from "./images/profile.jpeg";
 export { default as boys } from "./images/boys.png";
 export { default as man } from "./images/man.png";
 export { default as redCapBoy } from "./images/red-cap-boy.png";
@@ -25,13 +30,13 @@ export { default as truckFront } from "./images/truck-front.png";
 export { default as insideCar } from "./images/inside-car.png";
 
 // companies logos
-export { default as samsumg } from "./images/samsumg.svg";
-export { default as monday } from "./images/monday.svg";
-export { default as morphius } from "./images/morphius.svg";
-export { default as openzepeline } from "./images/openzepeline.svg";
-export { default as oracle } from "./images/oracle.svg";
-export { default as protonet } from "./images/protonet.svg";
-export { default as segment } from "./images/segment.svg";
+export { default as samsumg } from "./images/company-logos/samsumg.svg";
+export { default as monday } from "./images/company-logos/monday.svg";
+export { default as morphius } from "./images/company-logos/morphius.svg";
+export { default as openzepeline } from "./images/company-logos/openzepeline.svg";
+export { default as oracle } from "./images/company-logos/oracle.svg";
+export { default as protonet } from "./images/company-logos/protonet.svg";
+export { default as segment } from "./images/company-logos/segment.svg";
 
 
 export { default as editRedIcon } from "./icons/edit-icon.svg";
