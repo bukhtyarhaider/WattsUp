@@ -1,0 +1,38 @@
+@import "../../mixins";
+.collaborationsContainer {
+  padding: 135px 0;
+  padding-bottom: 118px;
+  p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 27.72px;
+    text-align: center;
+    padding-bottom: 37px;
+  }
+  .logosContainer {
+    @include flex(row, center, center);
+    gap: 48px;
+
+    .imageWrapp {
+      height: auto;
+      width: auto;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .collaborationsContainer {
+    padding: 80px 0;
+    p {
+      font-size: 18px;
+    }
+    .logosContainer {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+    }
+  }
+}

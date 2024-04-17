@@ -1,0 +1,71 @@
+@import "../../mixins";
+.reviewsSectionContainer {
+  background-color: var(--pink);
+  padding: 40px 20px;
+  padding-bottom: 80px;
+  position: relative;
+  .heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+    padding-bottom: 80px;
+
+    span {
+      color: var(--primary-red);
+    }
+  }
+
+  .cardContaier {
+    padding-inline: 60px;
+  }
+
+  .customButtons {
+    position: absolute;
+    top: 53px;
+    right: 91px;
+    @include flex(row, center, center);
+    gap: 8px;
+
+    .customPrevButton {
+      transform: rotate(180deg);
+      margin-top: -8px;
+    }
+  }
+
+  .redTriagle {
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviewsSectionContainer {
+    .heading {
+      font-size: 34px;
+      line-height: 52px;
+    }
+
+    .cardContaier {
+      padding-inline: 0px;
+    }
+
+    .customButtons {
+      top: 160px;
+      right: 15px;
+    }
+
+    .redTriagle {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      height: 170px;
+    }
+  }
+}

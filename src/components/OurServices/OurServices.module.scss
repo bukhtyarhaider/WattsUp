@@ -1,0 +1,49 @@
+@import "../../mixins";
+.ourServicesContainer {
+  @include flex(column, center, center);
+  padding-bottom: 100px;
+
+  .heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    padding-bottom: 20px;
+
+    span {
+      color: var(--primary-red);
+    }
+  }
+
+  .description {
+    color: var(--d-grey);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .cardsContainer {
+    @include flex(row, center, center);
+    gap: 30px;
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ourServicesContainer {
+    @include flex(column, center, center);
+    padding-bottom: 50px;
+    .heading {
+      font-size: 42px;
+      padding-bottom: 0px;
+    }
+
+    .description {
+      font-size: 14px;
+    }
+
+    .cardsContainer {
+      @include flex(column, center, center);
+    }
+  }
+}

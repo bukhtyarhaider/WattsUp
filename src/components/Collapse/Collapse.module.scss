@@ -1,0 +1,41 @@
+@import "../../mixins";
+.accordionContainer {
+  padding: 11px 20px;
+  background: var(--secondary-black);
+  border-radius: 14px;
+  color: var(--primary-white);
+
+  .header {
+    @include flex(row, space-between, center);
+    cursor: pointer;
+
+    p {
+      line-height: 32px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    div {
+      font-size: 20px;
+    }
+  }
+
+  .body {
+    max-height: 0;
+    overflow: hidden;
+
+    p {
+      line-height: 32px;
+      font-weight: 500;
+      padding-top: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .show {
+    max-height: 1000px;
+  }
+}
+.isOpen {
+  height: auto;
+}

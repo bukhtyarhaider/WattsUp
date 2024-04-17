@@ -1,0 +1,104 @@
+@import "../../mixins";
+.empoweringInsightsContainer {
+  @include flex(column, center, center);
+  text-align: center;
+  padding: 80px 0;
+  .heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+
+    span {
+      color: var(--primary-red);
+    }
+  }
+
+  .description {
+    color: var(--d-grey);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 24px 330px;
+    padding-bottom: 40px;
+  }
+
+  .imageWrapp {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .insightsContainer {
+    background-color: var(--secondary-black);
+    color: var(--primary-white);
+    width: 990px;
+    height: 135.03px;
+    padding: 32px 50px;
+    gap: 31.83px;
+    border-radius: 20px;
+    margin-top: 40px;
+
+    @include flex(row, space-between, center);
+    .insightCard {
+      width: 25%;
+      border-right: 1px solid var(--primary-white);
+      h3 {
+        font-size: 28px;
+        font-weight: 600;
+        span {
+          color: var(--primary-red);
+        }
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.1px;
+      }
+    }
+
+    .insightCard:last-child {
+      border-right: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .empoweringInsightsContainer {
+    padding: 50px 0;
+    .heading {
+      font-size: 32px;
+    }
+
+    .description {
+      padding: 20px;
+      padding-bottom: 40px;
+    }
+
+    .imageWrapp {
+      padding-inline: 20px;
+    }
+
+    .insightsContainer {
+      width: 100vw;
+      height: auto;
+      padding: 32px 10px;
+      gap: 10px;
+      border-radius: 0;
+      @include flex(row, space-between, center);
+      .insightCard {
+        border-right: none;
+        width: auto;
+        h3 {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 10px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
