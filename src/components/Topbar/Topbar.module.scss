@@ -4,6 +4,7 @@
   @include flex(row, space-between, center);
   padding: 30px 100px;
   position: absolute;
+  background-color: var(--primary-white);
   z-index: 1;
   right: 0;
   left: 0;

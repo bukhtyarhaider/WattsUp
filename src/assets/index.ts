@@ -15,7 +15,6 @@ export { default as footerImg } from "./images/footer.png";
 export { default as faqImg } from "./images/faq.png";
 export { default as linesTop } from "./images/linesTop.svg";
 
-
 export { default as call } from "./icons/call.svg";
 export { default as truckIcon } from "./icons/truck.svg";
 export { default as boxTimeIcon } from "./icons/box-time.svg";
@@ -53,7 +52,5 @@ export { default as arrowLeft } from "./icons/arrow-left-circle.svg";
 export { default as arrowRight } from "./icons/arrow-right-circle.svg";
 export { default as testimonials } from "./icons/testimonials.svg";
 
-
-
-
-// 
+export { default as aboutUsImg } from "./images/about-us.png";
+export { default as contactUsImg } from "./images/contact-us.png";

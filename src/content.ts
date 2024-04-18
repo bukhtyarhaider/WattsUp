@@ -267,6 +267,29 @@ export const ourSpecializedFleetData = [
   },
 ];
 
+export const aboutUsData = [
+  {
+    heading: "Our Story",
+    description:
+      "Founded by a team of industry enthusiasts, Watts Up Trucking is driven by a collective vision to revolutionize the trucking experience. Our mission is to simplify logistics while making it accessible to all—from seasoned drivers to those just starting their journey in the industry.",
+  },
+  {
+    heading: "What Drives Us",
+    description:
+      "At Watts Up Trucking, we're motivated by the belief that every shipment is unique, and efficient transportation goes beyond just delivering goods—it's about fostering relationships and driving growth. We're committed to providing exceptional service that goes above and beyond, ensuring transparency, reliability, and a community where drivers and clients alike can thrive.",
+  },
+  {
+    heading: "Our Mission",
+    description:
+      "Our mission is clear: to make the trucking experience as seamless and rewarding as possible. We're dedicated to delivering top-notch service that empowers drivers and clients alike, putting them in control of their logistics destiny.",
+  },
+  {
+    heading: "Join the Watts Up Trucking Community",
+    description:
+      "Whether you're a seasoned driver, a new recruit, or a business in need of transportation solutions, we invite you to join our Watts Up Trucking community. Embark on your journey with us, explore our range of services, and let us help you drive towards success. At Watts Up Trucking, we're not just transporting goods; we're powering connections and fueling growth. Welcome to a world of efficient logistics and endless possibilities.",
+  },
+];
+
 export const footerData = [
   {
     heading: "Menus",
