@@ -1,0 +1,51 @@
+@import "../../mixins";
+
+.OurServiceHeaderContaioner {
+  @include flex(column, center, center);
+  padding-inline: 290px;
+  padding-top: 125px;
+  padding-bottom: 150px;
+  text-align: center;
+
+  .heading {
+    padding-top: 25px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 72.8px;
+
+    span {
+      color: var(--primary-red);
+    }
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--d-grey);
+    padding: 20px 0;
+    padding-bottom: 45px;
+  }
+
+  .imageWrapp {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .OurServiceHeaderContaioner {
+    @include flex(column, center, center);
+    padding-inline: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .heading {
+      padding-top: 0px;
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+}
