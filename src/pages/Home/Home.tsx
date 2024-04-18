@@ -10,15 +10,6 @@ import OurSpecializedFleet from "../../components/OurSpecializedFleet/OurSpecial
 const Home = () => {
     return (
         <div>
-            {/* <HeroSection />
-            <Collaborations />
-            <OurServices />
-            <JoinUs />
-            <EmpoweringInsights />
-            <ReviewsSection />
-            <WhyChooseUs />
-            <FAQSection />
-            <TruckJourney /> */}
             <OurServiceHeader />
             <ComprehensiveSolutions />
             <WhatWeOffer />
