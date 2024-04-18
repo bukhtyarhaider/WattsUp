@@ -5,6 +5,11 @@ import styles from './AboutUs.module.scss';
 import { aboutUsImg } from '../../assets';
 import { aboutUsData } from '../../content';
 
+interface AboutUsInfo {
+    heading: string;
+    description: string;
+}
+  
 const AboutUs = () => {
     return (
         <div className={styles.aboutUsContainer}>
@@ -20,7 +25,7 @@ const AboutUs = () => {
 
             <div className={styles.contentContainer}>
                 {
-                    aboutUsData.map((data, index) => (
+                    aboutUsData.map((data: AboutUsInfo, index: number) => (
                         <React.Fragment key={index}>
                             <h2 className={styles.contentHeading}>{data.heading}</h2>
                             <p className={styles.contentDescription}>{data.description}</p>
