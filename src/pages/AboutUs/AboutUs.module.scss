@@ -1,0 +1,91 @@
+@import "../../mixins";
+.aboutUsContainer {
+  .imgContainer {
+    position: relative;
+    display: inline-block;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    .imgContent {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: var(--primary-white);
+      .heading {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 72px;
+        padding-bottom: 20px;
+      }
+
+      .description {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+      }
+    }
+  }
+
+  .contentContainer {
+    @include flex(column, start, start);
+    padding: 105px 115px;
+    padding-bottom: 35px;
+    .contentHeading {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 25px;
+      padding-bottom: 25px;
+    }
+
+    .contentDescription {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25px;
+      padding-bottom: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aboutUsContainer {
+    padding-top: 90px;
+    .imgContainer {
+      .imgContent {
+        top: 50%;
+        width: 330px;
+        .heading {
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 28px;
+          padding-bottom: 10px;
+        }
+
+        .description {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .contentContainer {
+      padding: 20px;
+      padding-bottom: 20px;
+      .contentHeading {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 25px;
+        padding-bottom: 20px;
+      }
+
+      .contentDescription {
+        font-size: 14px;
+        line-height: 25px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
