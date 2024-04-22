@@ -3,7 +3,7 @@ import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
 interface GoogleMapComponentProps {
     styleOptions: React.CSSProperties;
-    center?: {
+    center: {
         lat: number;
         lng: number;
     };
@@ -11,10 +11,7 @@ interface GoogleMapComponentProps {
 
 const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
     styleOptions,
-    center = {
-        lat: 31.4830867, // Example latitude
-        lng: 74.2980841, // Example longitude
-    },
+    center
 }) => {
     const { isLoaded, loadError } = useLoadScript({
         googleMapsApiKey: "AIzaSyA07lD6jhIN2OwvpX1cXsj5NAiN3T5pDjk",

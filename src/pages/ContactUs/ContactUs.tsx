@@ -46,6 +46,10 @@ const ContactUs: React.FC = () => {
                             padding: "10px",
                             borderRadius: "10px",
                         }}
+                        center={{
+                            lat: 31.4830867,
+                            lng: 74.2980841,
+                        }}
                     />
                 </div>
             </div>
