@@ -4,6 +4,7 @@ import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 interface GoogleMapComponentProps {
     styleOptions: React.CSSProperties;
     center: {
+    center: {
         lat: number;
         lng: number;
     };
