@@ -10,6 +10,14 @@ import GoogleMapComponent from '../../components/GoogleMapComponent/GoogleMapCom
 
 const ContactUs: React.FC = () => {
 
+    const apiKey = import.meta.env.VITE_GOOGLE_MAP_API_KEY;
+
+    // TODO: update the location
+    const location = {
+        lat: 31.4830867, 
+        lng: 74.2980841, 
+    }
+
     return (
         <div className={styles.contactUsContainer}>
             <div className={styles.imgContainer}>
@@ -46,6 +54,8 @@ const ContactUs: React.FC = () => {
                             padding: "10px",
                             borderRadius: "10px",
                         }}
+                        center={location}
+                        api= {apiKey}
                     />
                 </div>
             </div>
