@@ -3,6 +3,7 @@ import "./main.scss";
 import Home from "./pages/Home/Home";
 import Topbar from "./components/Topbar/Topbar";
 import { navItems } from "./content";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 interface ThemeContextProps {
   theme: string;
@@ -22,7 +23,8 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="app-container" id={theme}>
         <Topbar navItems={navItems} />
-        <Home />
+        {/* <Home /> */}
+        <ContactUs />
       </div>
     </ThemeContext.Provider>
   );
