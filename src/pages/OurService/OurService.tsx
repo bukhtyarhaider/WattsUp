@@ -1,6 +1,3 @@
-import FAQSection from "../../components/FAQSection/FAQSection";
-import TruckJourney from "../../components/TruckJourney/TruckJourney";
-import Footer from "../../components/Footer/Footer";
 import ComprehensiveSolutions from "../../components/ComprehensiveSolutions/ComprehensiveSolutions";
 import OurServiceHeader from "../../components/OurServiceHeader/OurServiceHeader";
 import OurSpecializedFleet from "../../components/OurSpecializedFleet/OurSpecializedFleet";
@@ -15,9 +12,6 @@ const OurService = () => {
             <ComprehensiveSolutions />
             <WhatWeOffer />
             <OurSpecializedFleet />
-            <FAQSection />
-            <TruckJourney />
-            <Footer /> 
         </div>
     )
 }

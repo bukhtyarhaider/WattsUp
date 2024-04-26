@@ -3,6 +3,7 @@
   .imgContainer {
     position: relative;
     display: inline-block;
+    min-height: 594px;
     img {
       height: 100%;
       width: 100%;
@@ -53,6 +54,7 @@
   .aboutUsContainer {
     padding-top: 90px;
     .imgContainer {
+      min-height: 100%;
       .imgContent {
         top: 50%;
         width: 330px;

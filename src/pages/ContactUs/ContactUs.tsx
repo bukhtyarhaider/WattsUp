@@ -2,9 +2,6 @@ import React from 'react';
 import LazyLoad from 'react-lazy-load';
 import styles from './ContactUs.module.scss';
 import { contactUsImg } from '../../assets';
-import Footer from '../../components/Footer/Footer';
-import TruckJourney from '../../components/TruckJourney/TruckJourney';
-import FAQSection from '../../components/FAQSection/FAQSection';
 import GoogleMapComponent from '../../components/GoogleMapComponent/GoogleMapComponent';
 
 
@@ -14,8 +11,8 @@ const ContactUs: React.FC = () => {
 
     // TODO: update the location
     const location = {
-        lat: 31.4830867, 
-        lng: 74.2980841, 
+        lat: 31.4830867,
+        lng: 74.2980841,
     }
 
     return (
@@ -55,13 +52,10 @@ const ContactUs: React.FC = () => {
                             borderRadius: "10px",
                         }}
                         center={location}
-                        api= {apiKey}
+                        api={apiKey}
                     />
                 </div>
             </div>
-            <FAQSection />
-            <TruckJourney />
-            <Footer />
         </div>
     );
 }
