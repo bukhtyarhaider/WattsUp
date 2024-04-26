@@ -1,6 +1,3 @@
-import FAQSection from "../../components/FAQSection/FAQSection";
-import TruckJourney from "../../components/TruckJourney/TruckJourney";
-import Footer from "../../components/Footer/Footer";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import Collaborations from "../../components/Collaborations/Collaborations";
 import EmpoweringInsights from "../../components/EmpoweringInsights/EmpoweringInsights";
@@ -20,9 +17,6 @@ const Home = () => {
             <EmpoweringInsights />
             <ReviewsSection />
             <WhyChooseUs />
-            <FAQSection />
-            <TruckJourney />
-            <Footer />
         </div>
     )
 }

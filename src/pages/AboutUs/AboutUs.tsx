@@ -4,15 +4,12 @@ import LazyLoad from 'react-lazy-load';
 import styles from './AboutUs.module.scss';
 import { aboutUsImg } from '../../assets';
 import { aboutUsData } from '../../content';
-import Footer from '../../components/Footer/Footer';
-import TruckJourney from '../../components/TruckJourney/TruckJourney';
-import FAQSection from '../../components/FAQSection/FAQSection';
 
 interface AboutUsInfo {
     heading: string;
     description: string;
 }
-  
+
 const AboutUs = () => {
     return (
         <div className={styles.aboutUsContainer}>
@@ -36,9 +33,6 @@ const AboutUs = () => {
                     ))
                 }
             </div>
-            <FAQSection />
-            <TruckJourney />
-            <Footer />
         </div>
     );
 }
