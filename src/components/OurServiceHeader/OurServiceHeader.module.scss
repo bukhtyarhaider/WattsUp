@@ -12,6 +12,8 @@
     font-size: 56px;
     font-weight: 700;
     line-height: 72.8px;
+    animation: slideInFromTop 1s;
+    @include slideFromTop;
 
     span {
       color: var(--primary-red);
@@ -25,6 +27,8 @@
     color: var(--d-grey);
     padding: 20px 0;
     padding-bottom: 45px;
+    animation: slideInFromTop 1s;
+    @include slideFromTop;
   }
 
   .imageWrapp {

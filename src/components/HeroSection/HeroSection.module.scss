@@ -10,8 +10,8 @@
     gap: 30px;
     padding-left: 100px;
     width: 54%;
-    animation: fadeIn 2.5s;
-    @include fadeAnimation;
+    animation: slideInFromTop 1s;
+    @include slideFromTop;
 
     .heading {
       margin-top: -80px;
@@ -83,6 +83,8 @@
   }
 
   .imageContainer {
+    animation: slideInFromRight 1s;
+    @include slideFromRight;
     width: 46%;
     .imageWrapp {
       height: 615px;

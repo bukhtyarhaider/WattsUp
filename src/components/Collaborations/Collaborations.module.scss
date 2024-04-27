@@ -2,6 +2,7 @@
 .collaborationsContainer {
   padding: 135px 0;
   padding-bottom: 118px;
+
   p {
     font-size: 22px;
     font-weight: 300;
@@ -12,6 +13,9 @@
   .logosContainer {
     @include flex(row, center, center);
     gap: 48px;
+    margin-left: 50px;
+    animation: slide 2s linear infinite alternate;
+    @include slideAnimation;
 
     .imageWrapp {
       height: auto;
@@ -31,6 +35,7 @@
       font-size: 18px;
     }
     .logosContainer {
+      margin-left: 20px;
       @include flex(row, center, center);
       flex-wrap: wrap;
     }

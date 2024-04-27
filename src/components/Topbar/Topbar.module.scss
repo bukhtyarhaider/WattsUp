@@ -10,6 +10,8 @@
   left: 0;
   .logoContainer {
     z-index: 1;
+    animation: slideInFromLeft 1s;
+    @include slideFromLeft;
     .logoWrapper {
       width: 115px;
       img {
@@ -94,6 +96,11 @@
       }
     }
   }
+
+  .button {
+    animation: slideInFromTop 1s;
+    @include slideFromTop;
+  }
 }
 .menuContainerMobile {
   @include flex(column, center, center);
@@ -157,7 +164,7 @@
     }
 
     .button {
-        display: none;
+      display: none;
     }
 
     .menuContainer {

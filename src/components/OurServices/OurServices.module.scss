@@ -8,6 +8,8 @@
     font-weight: 700;
     line-height: 72px;
     padding-bottom: 20px;
+    animation: slideInFromTop 1s;
+    @include slideFromTop;
 
     span {
       color: var(--primary-red);
@@ -15,6 +17,8 @@
   }
 
   .description {
+    animation: slideInFromTop 1s;
+    @include slideFromTop;
     color: var(--d-grey);
     font-size: 16px;
     font-weight: 500;
