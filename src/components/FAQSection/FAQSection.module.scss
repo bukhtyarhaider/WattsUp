@@ -4,6 +4,7 @@
   padding: 100px 0;
   position: relative;
   padding-bottom: 80px;
+  overflow: hidden;
   .heading {
     font-size: 52px;
     font-weight: 600;
@@ -38,6 +39,8 @@
     position: absolute;
     bottom: 0px;
     right: 0;
+    animation: sparkle 2s ease-in-out infinite;
+    @include sparkleAnimation;
   }
 }
 

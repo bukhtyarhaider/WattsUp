@@ -4,6 +4,7 @@
   background: var(--pink);
   padding: 60px 0;
   text-align: center;
+  overflow: hidden;
   .heading {
     font-size: 48px;
     font-weight: 700;
@@ -42,6 +43,8 @@
     position: absolute;
     top: 0;
     right: 0;
+    animation: sparkle 2s ease-in-out infinite;
+    @include sparkleAnimation;
   }
 }
 
